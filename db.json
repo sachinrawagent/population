@@ -1,0 +1,27 @@
+{
+  "countries": [
+    {
+      "Name": "INDIA"
+    }
+  ],
+  "city": [
+    {
+      "City": "delhi",
+      "population": "200000",
+      "Country": "India",
+      "id": 1
+    },
+    {
+      "City": "lucknow",
+      "population": "100000",
+      "Country": "India",
+      "id": 2
+    },
+    {
+      "City": "bangalore",
+      "population": "200000",
+      "Country": "india",
+      "id": 3
+    }
+  ]
+}
