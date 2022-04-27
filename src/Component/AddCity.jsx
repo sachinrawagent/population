@@ -3,9 +3,9 @@ import { useDispatch,useSelector} from "react-redux";
 import { cityInfo } from "../Redux/City/action";
 
 export const AddCity=()=>{
-    const [City,update]=useState("");
-    const [population,updatepop]=useState();
-    const [Country,updatecoun]=useState("");
+    const [City,setCity]=useState("");
+    const [population,setpopulation]=useState();
+    const [Country,setCountry]=useState("");
     const dispatch=useDispatch();
     const state=useSelector((state)=>state);
     // console.log(state);
@@ -21,12 +21,12 @@ export const AddCity=()=>{
     }
     return(
         <div>
-            <input type="text" required onChange={(e)=>update(e.target.value)}  placeholder="Enter the city name"/>
+            <input type="text" required onChange={(e)=>setCity(e.target.value)}  placeholder="Enter the city name"/>
             <input type="number"
-            onChange={(e)=>updatepop(e.target.value)}
+            onChange={(e)=>setpopulation(e.target.value)}
              required placeholder="Enter the population" />
             <input type="text" 
-             onChange={(e)=>updatecoun(e.target.value)}
+             onChange={(e)=>setCountry(e.target.value)}
          
             required placeholder="Enter the country name" />
             <button onClick={addcity}>ADD CTIY</button>
